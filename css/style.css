@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/*ヘッダー部分*/
+header {
+  background: url(../images/header_bg.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+/*中央揃え*/
+.innerWrap {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+}
+
+
+/*グローバルナビゲーションの配置*/
+header nav {
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*重なりを指定（手前に来るように）*/
+  /*z-index: 100;*/
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+main h2 {
+  text-align: center;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 30px;
+  letter-spacing: .05em;
+  margin-bottom: 80px;
+}
+
+main h3 {
+  text-align: center;
+  font-family: 'Shippori Mincho B1', serif;
+  margin-bottom: 50px;
+}
+
+.artistSec {
+  background-color: #fbfaf7;
+}
+
+.artistSec p {
+  font-family: serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.artistSec p img {
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+/*パララックス効果*/
+.artistSec {
+  margin-bottom: 490px;
+}
+.artistSec::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.jpg) no-repeat center/cover;
+  z-index: -1;
+}
+
+.artworkSec {
+  background-color: #fbfaf7;
+  height: 600px;
+}
+
+/*画像*/
+.artwork {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    list-style: none;
+  }
+}
+
+.experienceSec {
+  background-color: #fbfaf7;
+  height: 700px;
+}
+
+.experienceSec p {
+  font-family: serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.accessSec {
+  background-color: #fbfaf7;
+  height: 600px;
+}
+
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* = height ÷ width × 100 */
+}
+.iframe-wrap iframe {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 300px;
+} 
+
+footer {
+  text-align: center;
+  background-color: #fbfaf7;
+}
